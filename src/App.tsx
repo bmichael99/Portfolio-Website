@@ -14,7 +14,7 @@ function App() {
         <header className='w-full py-4'>
           <div className='grid gap-8 sm:gap-4 grid-cols-1 sm:grid-cols-2'>
             {/*Left Side Header*/}
-            <div className='flex flex-col gap-2'>
+            <div className='grid gap-4 grid-rows-[auto_1fr_auto]'>
               <h1 className='pt-4 text-3xl font-medium'>Michael Brandmeyer</h1>
               <p className='text-muted-foreground'>Software Engineer developing full-stack applications and building business workflow automations. Interested in scalable backend systems and low-level programming.</p>
               {/*Socials*/}
