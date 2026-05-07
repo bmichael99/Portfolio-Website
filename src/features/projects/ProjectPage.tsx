@@ -1,7 +1,8 @@
-import React from 'react'
 import ProjectCard from './components/ProjectCard';
 
 type Props = {}
+
+import { type TechList } from '../../lib/tech';
 
 export type Project = {
   title: string,
@@ -10,6 +11,7 @@ export type Project = {
   github_link: string,
   demo_link?: string,
   image_url: string,
+  technology_used: TechList[],
 }
 
 type Projects = Project[];
@@ -22,6 +24,7 @@ const projects : Projects = [
     github_link: "https://github.com/bmichael99/FinanceOps-Platform",
     demo_link: "https://finance.michaelbrandmeyer.com",
     image_url: "",
+    technology_used: ['javascript', 'typescript', 'tailwindcss', 'react', 'express', 'postgresql', 'docker', 'github_actions'],
   },
   {
     title: "Google Drive Clone",
@@ -30,6 +33,7 @@ const projects : Projects = [
     github_link: "https://github.com/bmichael99/File-Uploader-App",
     demo_link: "https://files.michaelbrandmeyer.com/",
     image_url: "",
+    technology_used: ['javascript', 'html', 'css', 'nodejs', 'express', 'postgresql'],
   },
   {
     title: "Class Scheduling Assistant | Top Class",
@@ -37,6 +41,7 @@ const projects : Projects = [
     description: "A web application that streamlines class selection by surfacing professor ratings, reviews, and popular tags directly alongside course schedules. Pulls data from RateMyProfessor through a custom-built scraper API, giving students the context they need to make informed decisions without manually researching each professor. Built with a Java Spring Boot backend and React frontend, with a separate Python microservice handling data extraction.",
     github_link: "http://github.com/Josue-B-Navarrete/TopClass",
     image_url: "",
+    technology_used: ['docker', 'javascript'],
   },
   {
     title: "",
@@ -45,13 +50,15 @@ const projects : Projects = [
     github_link: "",
     demo_link: "",
     image_url: "",
+    technology_used: ['docker', 'javascript'],
   },
 ]
 
 function ProjectPage({}: Props) {
   return (
     <div className='w-full'>
-      <h2 className='underline font-bold text-xl py-4'>Projects</h2>
+      <h2 className='font-bold text-3xl py-4'>Projects</h2>
+      <hr></hr>
       {projects.map((project) => 
         <ProjectCard 
         summary={project.summary}
@@ -60,6 +67,7 @@ function ProjectPage({}: Props) {
         image_url={project.image_url}
         title={project.title}
         demo_link={project.demo_link}
+        technology_used={project.technology_used}
         key={project.title}
         />
       )}
