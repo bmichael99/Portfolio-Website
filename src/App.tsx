@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className='flex justify-center min-h-svh p-6'>
-      <div className='max-w-4xl'>
+      <div className='max-w-4xl min-w-0'>
         {/*Header*/}
         <header className='w-full py-4 pb-16'>
           <div className='grid gap-8 sm:gap-4 grid-cols-1 sm:grid-cols-2'>
