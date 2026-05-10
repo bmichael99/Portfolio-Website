@@ -24,7 +24,7 @@ const projects : Projects = [
     github_link: "https://github.com/bmichael99/FinanceOps-Platform",
     demo_link: "https://finance.michaelbrandmeyer.com",
     image_url: "",
-    technology_used: ['javascript', 'typescript', 'tailwindcss', 'react', 'express', 'postgresql', 'docker', 'github_actions'],
+    technology_used: ['javascript', 'typescript', 'react', 'tailwindcss', 'nodejs', 'express', 'postgresql', 'docker', 'github_actions', 'aws', 'azure'],
   },
   {
     title: "Google Drive Clone",
@@ -41,7 +41,7 @@ const projects : Projects = [
     description: "A web application that streamlines class selection by surfacing professor ratings, reviews, and popular tags directly alongside course schedules. Pulls data from RateMyProfessor through a custom-built scraper API, giving students the context they need to make informed decisions without manually researching each professor. Built with a Java Spring Boot backend and React frontend, with a separate Python microservice handling data extraction.",
     github_link: "http://github.com/Josue-B-Navarrete/TopClass",
     image_url: "",
-    technology_used: ['docker', 'javascript'],
+    technology_used: ['javascript', 'html', 'css', 'java', 'python', 'postgresql'],
   },
   {
     title: "",
@@ -53,24 +53,27 @@ const projects : Projects = [
     technology_used: ['docker', 'javascript'],
   },
 ]
+//TODO: Project Cards need to have a fixed size and rules for overflowing content.
 
 function ProjectPage({}: Props) {
   return (
     <div className='w-full'>
       <h2 className='font-bold text-3xl py-4'>Projects</h2>
       <hr></hr>
-      {projects.map((project) => 
-        <ProjectCard 
-        summary={project.summary}
-        description={project.description}
-        github_link={project.github_link}
-        image_url={project.image_url}
-        title={project.title}
-        demo_link={project.demo_link}
-        technology_used={project.technology_used}
-        key={project.title}
-        />
-      )}
+      <div className='py-2 flex flex-col gap-2'>
+        {projects.map((project) => 
+          <ProjectCard 
+          summary={project.summary}
+          description={project.description}
+          github_link={project.github_link}
+          image_url={project.image_url}
+          title={project.title}
+          demo_link={project.demo_link}
+          technology_used={project.technology_used}
+          key={project.title}
+          />
+        )}
+      </div>
     </div>
   )
 }
