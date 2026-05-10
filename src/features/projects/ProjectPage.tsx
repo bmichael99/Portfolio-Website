@@ -41,7 +41,7 @@ const projects : Projects = [
     description: "A web application that streamlines class selection by surfacing professor ratings, reviews, and popular tags directly alongside course schedules. Pulls data from RateMyProfessor through a custom-built scraper API, giving students the context they need to make informed decisions without manually researching each professor. Built with a Java Spring Boot backend and React frontend, with a separate Python microservice handling data extraction.",
     github_link: "http://github.com/Josue-B-Navarrete/TopClass",
     image_url: "",
-    technology_used: ['javascript', 'html', 'css', 'java', 'python', 'postgresql'],
+    technology_used: ['react', 'javascript',  'html', 'css', 'java', 'python', 'postgresql'],
   },
   {
     title: "",

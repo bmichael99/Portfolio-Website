@@ -9,16 +9,18 @@ import TechBadge from '../../technology/components/TechBadge'
 function ProjectCard({title, summary, description, github_link, image_url, demo_link, technology_used }: Project) {
   return (
     
-    <div className='grid gap-4 items-center md:grid-cols-[auto_1fr] p-2 hover:outline-1 rounded-3xl'>
+    <div className='grid gap-4 items-center md:grid-cols-[auto_1fr] py-4 px-2 hover:outline-1 rounded-3xl'>
       {/*Project Photo*/}
       <img className='outline-1 w-[350px] h-[250px] rounded-3xl justify-self-center'></img>
       {/*Project Info*/}
-      <div className='py-4 w-full  rounded-sm flex flex-col gap-2'>
+      <div className='w-full h-full rounded-sm grid grid-rows-[auto_1fr_auto] gap-2'>
         <h2 className='font-medium'>{title}</h2>
-        <p className='text-muted-foreground'>{summary}</p>
-        {/*Technology Used*/}
-        <div className='flex gap-2 w-full pb-4 flex-wrap'>
-          {technology_used?.map((tech) => <TechBadge icon={techLabelsColored[tech].icon} label={techLabelsColored[tech].label}></TechBadge>)}
+        <div className='flex flex-col gap-3'>
+          <p className='text-muted-foreground'>{summary}</p>
+          {/*Technology Used*/}
+          <div className='flex gap-2 w-full pb-4 flex-wrap'>
+            {technology_used?.map((tech) => <TechBadge icon={techLabelsColored[tech].icon} label={techLabelsColored[tech].label}></TechBadge>)}
+          </div>
         </div>
         {/*Links*/}
         <div className='flex gap-2 w-full'>
