@@ -3,6 +3,8 @@ import './App.css'
 import ProjectPage from './features/projects/ProjectPage';
 import { FileUser, Mail } from 'lucide-react';
 import TechPage from './features/technology/TechPage';
+import EducationPage from './features/education/EducationPage';
+import ExperiencePage from './features/experience/ExperiencePage';
 
 
 function App() {
@@ -16,7 +18,7 @@ function App() {
   }, [])
 
   return (
-    <div className='flex justify-center min-h-svh p-6'>
+    <div className='flex justify-center min-h-svh p-2 sm:p-6'>
       <div className='max-w-4xl min-w-0'>
         {/*Header*/}
         <header className='w-full py-4 pb-16'>
@@ -49,6 +51,8 @@ function App() {
         </header>
 
         <TechPage />
+        <ExperiencePage />
+        <EducationPage />
         <ProjectPage />
       </div>
     </div>
