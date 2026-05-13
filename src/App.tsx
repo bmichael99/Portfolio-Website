@@ -5,6 +5,7 @@ import { FileUser, Mail } from 'lucide-react';
 import TechPage from './features/technology/TechPage';
 import EducationPage from './features/education/EducationPage';
 import ExperiencePage from './features/experience/ExperiencePage';
+import GithubHistory from './features/github/GithubHistory';
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
         <ExperiencePage />
         <EducationPage />
         <ProjectPage />
+        <GithubHistory />
       </div>
     </div>
   )
