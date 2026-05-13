@@ -23,7 +23,7 @@ function App() {
       <div className='max-w-4xl min-w-0'>
         {/*Header*/}
         <header className='w-full py-4 pb-16'>
-          <div className='grid gap-8 sm:gap-4 grid-cols-1 sm:grid-cols-2'>
+          <div className='gap-2 sm:gap-4 flex flex-col-reverse sm:grid sm:grid-cols-2'>
             {/*Left Side Header*/}
             <div className='grid gap-4 grid-rows-[auto_1fr_auto]'>
               <h1 className='pt-4 text-3xl font-medium'>Michael Brandmeyer</h1>

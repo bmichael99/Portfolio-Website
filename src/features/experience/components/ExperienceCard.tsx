@@ -11,9 +11,9 @@ const full_description = ['Led the end-to-end development of an AI and ML-powere
 function ExperienceCard({}: Props) {
   const [viewDetails,setViewDetails] = useState<boolean>(false);
   return (
-    <div className='grid gap-4 items-start grid-cols-[auto_1fr] py-4 px-2 hover:outline-1 rounded-3xl'>
+    <div className='grid gap-4 items-start xs:grid-cols-[auto_1fr] py-4 px-2 hover:outline-1 rounded-3xl'>
       {/*Project Photo*/}
-      <div>
+      <div className='flex flex-col items-center max-xs:hidden'>
         <img className='outline-1 w-[125px] h-[125px] rounded-3xl justify-self-center object-cover' src='/experience/adanta_logo.jpg'></img>
         <p className='text-sm text-muted-foreground pt-2 text-center'>Aug 2025 - Present</p>
       </div>
