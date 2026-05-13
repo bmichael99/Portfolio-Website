@@ -14,7 +14,7 @@ function EducationCard({}: Props) {
       <div className='w-full h-full rounded-sm flex flex-col gap-2'>
         <div>
         <h2 className='font-bold'>California State University San Marcos</h2>
-          <p className='font-normal'>B.S in Computer Science</p>
+          <p className='font-normal text-[15px]'>B.S in Computer Science</p>
         </div>
         <p className='text-sm text-muted-foreground'>3.4 GPA | 5x Dean's List</p>
         {/*Links*/}
