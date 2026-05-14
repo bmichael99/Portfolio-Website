@@ -20,7 +20,8 @@ function ExperienceCard({}: Props) {
       {/*Project Info*/}
       <div className='w-full h-full rounded-sm flex flex-col gap-2 items-start'>
         <div>
-        <h2 className='font-bold'>Adanta</h2>
+          <h2 className='font-bold'>Adanta</h2>
+          <p className='text-sm text-muted-foreground max-xs:pb-3 xs:hidden'>Aug 2025 - Present</p>
           <p className='font-normal text-[15px]'>Software Engineer | Contracted</p>
         </div>
         <p className='text-sm text-muted-foreground'>Building business workflow automations and tooling using full-stack technologies.</p>
