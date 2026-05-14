@@ -39,8 +39,8 @@ const projects : Projects = [
     title: "Class Scheduling Assistant | Top Class",
     summary: "A web application that streamlines class selection by surfacing professor ratings, reviews, and popular tags directly alongside course schedules.",
     description: "A web application that streamlines class selection by surfacing professor ratings, reviews, and popular tags directly alongside course schedules. Pulls data from RateMyProfessor through a custom-built scraper API, giving students the context they need to make informed decisions without manually researching each professor. Built with a Java Spring Boot backend and React frontend, with a separate Python microservice handling data extraction.",
-    github_link: "http://github.com/Josue-B-Navarrete/TopClass",
-    image_url: "",
+    github_link: "https://github.com/bmichael99/Top-Class",
+    image_url: "/projects/TopClass-2.png",
     technology_used: ['react', 'javascript', 'css', 'java', 'python', 'postgresql'],
   },
 ]
